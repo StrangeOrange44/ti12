@@ -1,0 +1,38 @@
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
+btnBack=KeyboardButton("Главное меню")
+
+
+
+btnUS=KeyboardButton("Америка")
+btnSA=KeyboardButton("Южная Америка")
+btnEEU=KeyboardButton("СНГ")
+btnWEU=KeyboardButton("Европа")
+btnAsia=KeyboardButton("Азия")
+mainMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnAsia,btnSA,btnWEU,btnEEU,btnUS)
+
+btnSMG=KeyboardButton("Team SMG")
+btnLGD=KeyboardButton("LGD Gaming")
+btnTalon=KeyboardButton("Talon Esports")
+btnAR=KeyboardButton("Azure Ray")
+btnTA=KeyboardButton("Thunder Awaken")
+btnKS=KeyboardButton("Keyd Stars")
+btnBC=KeyboardButton("beastcoast")
+btnEG=KeyboardButton("Evil Geniuses")
+btnTL=KeyboardButton("Team Liquid")
+btnGG=KeyboardButton("Gaimin Gladiators")
+btnTE=KeyboardButton("Tundra Esports")
+btnEn=KeyboardButton("Entity")
+btnPSG=KeyboardButton("PSG Quest")
+btnBB=KeyboardButton("BetBoom Team")
+btnTS=KeyboardButton("Team Spirit")
+btn9P=KeyboardButton("9Pandas")
+btnVP=KeyboardButton("Virtus.pro")
+btnTSM=KeyboardButton("TSM")
+btnSR=KeyboardButton("Shopify Rebellion")
+btnNO=KeyboardButton("nouns")
+USMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnTSM,btnSR,btnNO,btnBack)
+WEUMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnTL,btnGG,btnTE,btnEn,btnPSG,btnBack)
+EEUMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnBB,btnTS,btn9P,btnVP,btnBack)
+AsiaMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnSMG,btnLGD,btnTalon,btnAR,btnBack)
+SAMenu=ReplyKeyboardMarkup(resize_keyboard=True).add(btnTA,btnKS,btnBC,btnEG,btnBack)
